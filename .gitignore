@@ -32,3 +32,10 @@ Makefile*
 #QtCtreator Qml
 *.qmlproject.user
 *.qmlproject.user.*
+*.pyc
+development/bin/gkhydrauliccalc.pdb
+*.ilk
+development/bin/GKHydraulicCalc.exe_manifest.rc
+*.manifest
+development/bin/GKHydraulicCalc.exe
+*.res

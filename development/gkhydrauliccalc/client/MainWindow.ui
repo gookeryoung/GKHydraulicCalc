@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>584</width>
+    <height>498</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="_hlInput">
+      <item>
+       <widget class="QGroupBox" name="_gbStructuralParam">
+        <property name="title">
+         <string>Structural Parameters</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="_hlCylinderD">
+           <item>
+            <widget class="QLabel" name="_lCylinderD1">
+             <property name="text">
+              <string>Cylinder Diameter(D1)</string>
+             </property>
+             <property name="buddy">
+              <cstring>_dsCylinderD</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="_hsCylinderD">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="_dsCylinderD">
+             <property name="decimals">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <double>100.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>0.200000000000000</double>
+             </property>
+             <property name="value">
+              <double>25.399999999999999</double>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="_lCylinderD2">
+             <property name="text">
+              <string>mm</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="_hlCylinderL">
+           <item>
+            <widget class="QLabel" name="_lCylinderL1">
+             <property name="text">
+              <string>Cylinder Length(L)</string>
+             </property>
+             <property name="buddy">
+              <cstring>_dsCylinderL</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="_hsCylinderL">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="_dsCylinderL">
+             <property name="decimals">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <double>200.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>5.000000000000000</double>
+             </property>
+             <property name="value">
+              <double>50.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="_lCylinderL2">
+             <property name="text">
+              <string>mm</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="_hlValveD">
+           <item>
+            <widget class="QLabel" name="_lValveD1">
+             <property name="text">
+              <string>Valve Diameter(D2)</string>
+             </property>
+             <property name="buddy">
+              <cstring>_dsValveD</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="_hsValveD">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="_dsValveD">
+             <property name="decimals">
+              <number>1</number>
+             </property>
+             <property name="singleStep">
+              <double>1.000000000000000</double>
+             </property>
+             <property name="value">
+              <double>12.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="_lValveD2">
+             <property name="text">
+              <string>mm</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="_hlValveGap">
+           <item>
+            <widget class="QLabel" name="_lValveGap1">
+             <property name="text">
+              <string>Valve Gap(δ)</string>
+             </property>
+             <property name="buddy">
+              <cstring>_dsValveGap</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="_hsValveGap">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="_dsValveGap">
+             <property name="decimals">
+              <number>5</number>
+             </property>
+             <property name="maximum">
+              <double>2.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>0.001000000000000</double>
+             </property>
+             <property name="value">
+              <double>0.013000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="_lValveGap2">
+             <property name="text">
+              <string>mm</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="_hlValveL">
+           <item>
+            <widget class="QLabel" name="_lValveL1">
+             <property name="text">
+              <string>Valve Length(L)</string>
+             </property>
+             <property name="buddy">
+              <cstring>_dsValveL</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="_hsValveL">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="_dsValveL">
+             <property name="decimals">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <double>200.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>5.000000000000000</double>
+             </property>
+             <property name="value">
+              <double>35.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="_lValveL2">
+             <property name="text">
+              <string>mm</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="_gbExternParam">
+        <property name="title">
+         <string>External Parameters</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="_hlExternP">
+           <item>
+            <widget class="QLabel" name="_lExternP1">
+             <property name="text">
+              <string>External Pressure(P)</string>
+             </property>
+             <property name="buddy">
+              <cstring>_dsExternP</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="_hlExternP_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="_dsExternP">
+             <property name="maximum">
+              <double>300.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>5.000000000000000</double>
+             </property>
+             <property name="value">
+              <double>50.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="_lExternP2">
+             <property name="text">
+              <string>MPa</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="_hlTemperature">
+           <item>
+            <widget class="QLabel" name="_lTemperature1">
+             <property name="text">
+              <string>Temperature(T)</string>
+             </property>
+             <property name="buddy">
+              <cstring>_dsTemperature</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="_hsTemperature">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="_dsTemperature">
+             <property name="decimals">
+              <number>0</number>
+             </property>
+             <property name="maximum">
+              <double>500.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>10.000000000000000</double>
+             </property>
+             <property name="value">
+              <double>210.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="_lTemperature2">
+             <property name="text">
+              <string>℃</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="_vsExternParam2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="_pbCalc">
+           <property name="text">
+            <string>Calc</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="_pbPlotPt">
+           <property name="text">
+            <string>Plot P-t</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="_pbPlotTt">
+           <property name="text">
+            <string>Plot T-t</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="_pbClear">
+           <property name="text">
+            <string>Clear Output</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="_vsExternParam">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="_gbOutput">
+      <property name="title">
+       <string>Output</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_10">
+       <item>
+        <widget class="QTextBrowser" name="_tbOutput"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>584</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_New"/>
+    <addaction name="action_Import"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_New">
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+  </action>
+  <action name="action_Import">
+   <property name="text">
+    <string>&amp;Import</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>_pbCalc</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onCalc()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>472</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>575</x>
+     <y>284</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_pbPlotPt</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onPlotPt()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>418</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>448</x>
+     <y>284</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_pbPlotTt</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onPlotTt()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>458</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>349</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onCalc()</slot>
+  <slot>onPlotPt()</slot>
+  <slot>onPlotTt()</slot>
+ </slots>
+</ui>
