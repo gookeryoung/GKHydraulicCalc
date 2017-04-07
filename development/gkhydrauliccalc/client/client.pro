@@ -1,12 +1,20 @@
 TEMPLATE = app
 TARGET = GKHydraulicCalc
 
-QT += core gui widgets
+QT += widgets
 
 DESTDIR = $$PWD/../../bin
 
-INCLUDEPATH += $$PWD/../3rdparty/python2.6.6/include
-LIBS += -L$$PWD/../3rdparty/python2.6.6/libs -lpython26
+win32: {
+    INCLUDEPATH += $$PWD/../3rdparty/python2.6.6/include
+    LIBS += -L$$PWD/../3rdparty/python2.6.6/libs -lpython26
+}
+
+unix: {
+#    INCLUDEPATH += /usr/bin/python/include
+    LIBS += -lpython
+    INCLUDEPATH += /usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/include/python2.7
+}
 
 HEADERS += \
     MainWindow.h \

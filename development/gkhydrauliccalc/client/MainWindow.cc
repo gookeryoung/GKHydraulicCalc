@@ -1,6 +1,6 @@
 #include <QDebug>
 #include <QKeyEvent>
-#include "Python.h"
+#include <Python.h>
 #include "CurvePlotter.h"
 #include "ScriptParser.h"
 #include "MainWindow.h"
